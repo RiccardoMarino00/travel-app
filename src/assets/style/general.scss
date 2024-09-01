@@ -1,0 +1,90 @@
+/* @use './partials/exmaple.scss'; */
+@use './variables.scss';
+
+#app {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+/* BOTTONI */
+
+.btn-brand {
+  background-color: var(--brand-color) !important;
+  color: white !important;
+}
+
+.btn-brand:hover {
+  background-color: var(--brand-color-lighter) !important;
+}
+
+.btn-brand-inverted {
+  background-color: white;
+  color: var(--brand-color);
+}
+
+.btn-brand-inverted:hover {
+  background-color: var(--brand-color-lighter);
+  color: white;
+}
+
+.btn-add {
+  color: var(--brand-color) !important;
+  background-color: var(--neutral-gray) !important;
+  border-radius: 100% !important;
+}
+
+btn-add:hover {
+  color: var(--brand-color-lighter) !important;
+}
+
+/* CARD NOSTRE */
+
+.my-card {
+  border: none !important;
+}
+
+.my-card-header {
+  color: white !important;
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-card-header-future {
+  background-color: #2D2D2D !important;
+}
+
+.my-card-header-past {
+  background-color: #9D9D9D !important;
+}
+
+.my-card-header-current {
+  background-color: var(--brand-color) !important;
+}
+
+.my-card-body {
+  background-color: var(--neutral-gray);
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+
+.my-card-footer {
+  background-color: var(--neutral-gray);
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
